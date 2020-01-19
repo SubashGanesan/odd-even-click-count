@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <button onclick="foo();">Click me</button>
+</head>
+<body>
+        <script>
+        var aa=0;
+        function foo(){
+                aa++;
+                var a= document.createElement('div');
+                a.innerHTML="<h1>Hello World "+aa+ "</h1>";
+                a.setAttribute('style', 'color:red')
+               document.body.appendChild(a);
+        }
+        </script>
+</body>
+</html>

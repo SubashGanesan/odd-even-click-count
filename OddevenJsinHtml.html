@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <button onclick="foo();">Click me</button>
+</head>
+<body>
+<script>
+        var aa=0;
+
+        function foo(){
+                aa++;
+                for(i=0;i<=100;i++){
+                        var a= document.createElement('div');
+                        a.innerHTML=i;
+                        if(i%2==0){
+                        a.setAttribute('style', 'color:red')
+                        }else{
+                        a.setAttribute('style', 'color:blue')
+                        }
+                        document.body.appendChild(a);
+                }
+               }        
+</script>
+</body>
+</html>
